@@ -1,0 +1,15 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
+CREATE PROCEDURE [rpt].[SchoolYear]
+AS
+
+
+
+SELECT *
+FROM rpt.vw_SchoolYear
+ORDER BY SchoolYear
+
+GO

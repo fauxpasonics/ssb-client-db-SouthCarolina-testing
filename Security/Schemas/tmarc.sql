@@ -1,0 +1,3 @@
+CREATE SCHEMA [tmarc]
+AUTHORIZATION [dbo]
+GO

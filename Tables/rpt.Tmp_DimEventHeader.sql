@@ -1,0 +1,33 @@
+CREATE TABLE [rpt].[Tmp_DimEventHeader]
+(
+[DimEventHeaderId] [int] NOT NULL IDENTITY(1, 1),
+[DimArenaId] [int] NOT NULL,
+[DimSeasonHeaderId] [int] NOT NULL,
+[OpponentDimTeamId] [int] NOT NULL,
+[DimGameInfoId] [int] NOT NULL,
+[EventName] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EventDesc] [nvarchar] (500) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EventHierarchyL1] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EventHierarchyL2] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EventHierarchyL3] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EventHierarchyL4] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EventHierarchyL5] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EventDate] [date] NULL,
+[EventTime] [time] NULL,
+[EventDateTime] [datetime] NULL,
+[EventOpenTime] [datetime] NULL,
+[EventFinishTime] [datetime] NULL,
+[EventSeasonNumber] [int] NULL,
+[HomeGameNumber] [int] NULL,
+[GameNumber] [int] NULL,
+[IsSportingEvent] [bit] NULL,
+[CreatedBy] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[UpdatedBy] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CreatedDate] [datetime] NOT NULL,
+[UpdatedDate] [datetime] NOT NULL,
+[IsDeleted] [bit] NOT NULL,
+[DeleteDate] [datetime] NULL,
+[Custom_Dec_1] [decimal] (18, 6) NULL,
+[Custom_Dec_2] [decimal] (18, 6) NULL
+)
+GO
